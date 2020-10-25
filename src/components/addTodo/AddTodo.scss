@@ -1,0 +1,30 @@
+$size: 22px;
+$radius-size: 9px;
+
+@mixin borders {
+  border-radius: $radius-size;
+  font-size: $size;
+  border: 3px solid #fff;
+  background-color: #20639B;
+}
+
+.form {
+  margin: 20px 0 20px;
+
+  &__input {
+    @include borders;
+    margin-right: 5px;
+    color: #F6D55C;
+
+    &::placeholder {
+      text-align: center;
+      color: #fff;
+      opacity: 20%;
+    }
+  }
+
+  &__add {
+    @include borders;
+    color: #F6D55C;
+  }
+}

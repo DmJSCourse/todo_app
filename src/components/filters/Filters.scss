@@ -1,0 +1,24 @@
+$color-items: #20639B;
+
+.filters {
+  margin-bottom: 20px;
+  border: 3px solid #fff;
+  border-radius: 9px;
+  padding: 5px;
+  background-color: $color-items;
+  width: 440px;
+
+  &__header {
+    font-size: 22px;
+    font-weight: normal;
+  }
+
+  &__filter {
+    margin: 20px 20px 0 0;
+    cursor: pointer;
+  }
+}
+
+.active {
+  text-decoration: underline;
+}

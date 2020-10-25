@@ -1,0 +1,52 @@
+$color-bg: #173F5F;
+$color-items: #20639B;
+$color-text: #F6D55C;
+$color-green: #3CAE13;
+$color-red: #ED553B;
+
+$logo-size: 56px;
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto-Regular-webfont.woff") format("woff"),
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 22px;
+}
+
+html, body {
+  font-family: Roboto;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.app {
+  background-color: $color-bg;
+  color: $color-text;
+  padding-left: 40px;
+  height: 100%;
+
+  &__header {
+    background-color: $color-items;
+    margin-left: -40px;
+    display: flex;
+    padding: 5px;
+  }
+
+  &__title {
+    font-size: 34px;
+    margin-left: 10px;
+    padding-top: 5px;
+  }
+
+  &__logo {
+    height: $logo-size;
+    margin-left: 40px;
+  }
+}
