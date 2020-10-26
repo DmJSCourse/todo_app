@@ -6,7 +6,9 @@ import './Filters.scss';
 const Filters = ({ filter, setFilter }) => { 
   return (
     <div className="filters">
-      <h2 className="filters__header">Filter The List:</h2>
+      <h2 className="filters__header">
+        Filter The List:
+      </h2>
         <span
           className={classNames({ 
             filters__filter: true, 

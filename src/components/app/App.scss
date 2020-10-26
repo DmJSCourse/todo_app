@@ -6,6 +6,13 @@ $color-red: #ED553B;
 
 $logo-size: 56px;
 
+$top-margin: 40px;
+
+@mixin section-box {
+  margin-top: $top-margin;
+  margin-left: 40px;
+}
+
 @font-face {
   font-family: "Roboto";
   src: url("../../fonts/Roboto-Regular-webfont.woff") format("woff"),
@@ -19,6 +26,12 @@ $logo-size: 56px;
 
 html, body {
   font-family: Roboto;
+  height: 100%;
+  background-color: $color-bg;
+}
+
+#root {
+  height: 100%;
 }
 
 ul {
@@ -27,16 +40,21 @@ ul {
 }
 
 .app {
-  background-color: $color-bg;
   color: $color-text;
-  padding-left: 40px;
+  background-color: $color-bg;
   height: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
 
   &__header {
     background-color: $color-items;
-    margin-left: -40px;
+    width: 100%;
+    height: $logo-size + 10px;
     display: flex;
     padding: 5px;
+    flex-basis: 100%;
   }
 
   &__title {
@@ -48,5 +66,62 @@ ul {
   &__logo {
     height: $logo-size;
     margin-left: 40px;
+  }
+}
+
+.todos {
+  @include section-box;
+}
+
+.menu {
+  @include section-box;
+}
+
+@media screen and (min-width: 1280px) {
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    // background-color: $color-items;
+    background-image: url('../../images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+  }
+
+  .app {
+    width: 1280px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .app {
+    flex-direction: column;
+    padding: 5%;
+
+    &__header {
+      border-radius: 9px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .todos {
+    margin: 0;
+    width: 100%;
+  }
+
+  .menu {
+    margin: 0;
+    order: 3;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .app__header {
+    flex-wrap: wrap;
+  }
+
+  .app__logo {
+    margin-left: 0;
   }
 }

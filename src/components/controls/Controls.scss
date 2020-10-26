@@ -4,30 +4,38 @@ $color-items: #20639B;
   border-radius: 9px;
   font-size: 22px;
   border: 3px solid #fff;
-  background-color: #20639B;
+  background-color: $color-items;
   color: #F6D55C;
   width: 440px;
-  margin: 20px 0 0 40px;
+}
+
+@mixin hover {
+  &:hover {
+    background-color: #fff;
+    color: $color-items;
+    transition: all 0.3s ease-in-out;
+    border: 3px solid $color-items;
+  }
 }
 
 .controls {
-  background-color: $color-items;
   display: flex;
-  padding: 5px;
-  width: 100%;
-
-  position: fixed;
-  left: 0;
-  bottom: 0;
 
   display: flex;
   flex-direction: column;
 
   &__deleteButton {
     @include button-style;
+    @include hover;
   }
 
   &__completeButton {
     @include button-style;
+    @include hover;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 520px) {
+    display: none;
   }
 }

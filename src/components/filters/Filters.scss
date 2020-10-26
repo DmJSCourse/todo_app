@@ -1,5 +1,9 @@
 $color-items: #20639B;
 
+@mixin small-font {
+  font-size: 18px;
+}
+
 .filters {
   margin-bottom: 20px;
   border: 3px solid #fff;
@@ -16,6 +20,24 @@ $color-items: #20639B;
   &__filter {
     margin: 20px 20px 0 0;
     cursor: pointer;
+    &:hover{
+      color: #fff;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  @media screen and (max-width: 520px) {
+    width: 100%;
+      @include small-font;
+
+    &__header {
+      @include small-font;
+    }
+
+    &__filter {
+      @include small-font;
+      margin: 10px 10px 0 0 ;
+    }
   }
 }
 
