@@ -23,6 +23,13 @@ $items-size: 22px;
   line-height: $items-size;
 }
 
+@mixin hover {
+  &:hover{
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+  }
+}
+
 .item {
   border: 2px solid #fff;
   border-radius: 9px;
@@ -46,6 +53,7 @@ $items-size: 22px;
     width: $items-size;
     height: $items-size;
     cursor: pointer;
+    @include hover;
 
     &::before {
       content: '';
@@ -66,11 +74,13 @@ $items-size: 22px;
 
    &__delete {
     @include button-style;
+    @include hover;
     margin-left: 5px;
    }
 
    &__edit {
     @include button-style;
+    @include hover;
     margin-left: auto;
    }
 
@@ -86,6 +96,13 @@ $items-size: 22px;
      border-radius: 9px;
      margin-left: 10px;
      color: #fff;
-     width: 335px;
+     width: 400px;
    }
+
+   @media screen and (max-width: 520px) {
+    width: 100%;
+    &__text {
+      font-size: 18px;
+    }
+  }
 }

@@ -1,15 +1,25 @@
 $size: 22px;
 $radius-size: 9px;
+$color-items: #20639B;
 
 @mixin borders {
   border-radius: $radius-size;
   font-size: $size;
   border: 3px solid #fff;
-  background-color: #20639B;
+  background-color: $color-items;
+}
+
+@mixin hover {
+  &:hover {
+    background-color:#F6D55C;
+    color: $color-items;
+    transition: all 0.3s ease-in-out;
+    border: 3px solid #fff;
+  }
 }
 
 .form {
-  margin: 20px 0 20px;
+  margin: 0 0 20px;
 
   &__input {
     @include borders;
@@ -25,6 +35,24 @@ $radius-size: 9px;
 
   &__add {
     @include borders;
+    @include hover;
     color: #F6D55C;
+  }
+
+  @media screen and (max-width: 520px) {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    font-size: 18px;
+
+    &__input {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    &__add {
+      width: 180px;
+    }
   }
 }

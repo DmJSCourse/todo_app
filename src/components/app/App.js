@@ -86,36 +86,45 @@ function App() {
   }
 
   return (
-    <div className="app">
-      <header className="app__header">
-        <img
-            src={logo}
-            alt="logo"
-            className="app__logo"
-        />
-        <h1 className="app__title">
-          Todo App
-        </h1>
-      </header>
-      <AddTodo 
-        addTodo={addTodo}
-      />
-      <Filters 
-        filter={filter}
-        setFilter={setFilter}
-      />
-      <TodoList
-        list={filterList(filter)}
-        deleteTodo={deleteTodo}
-        changeTodoCompletion={changeTodoCompletion}
-        editTodo={editTodo}
-        activeTodoId={activeTodoId}
-        setActiveTodoId={setActiveTodoId}
-      />
-      <Controls
-        deleteCompleted={deleteCompleted}
-        markAllAsCompleted={markAllAsCompleted}
-      />
+    <div className="wrapper">
+      <div className="app">
+        <header className="app__header">
+          <img
+              src={logo}
+              alt="logo"
+              className="app__logo"
+          />
+          <h1 className="app__title">
+            Todo App
+          </h1>
+        </header>
+
+        <aside className="menu">
+          <AddTodo 
+            addTodo={addTodo}
+          />
+          <Filters 
+            filter={filter}
+            setFilter={setFilter}
+          />
+          <Controls
+            deleteCompleted={deleteCompleted}
+            markAllAsCompleted={markAllAsCompleted}
+          />
+        </aside>
+
+        <section className="todos">
+          <TodoList
+            list={filterList(filter)}
+            deleteTodo={deleteTodo}
+            changeTodoCompletion={changeTodoCompletion}
+            editTodo={editTodo}
+            activeTodoId={activeTodoId}
+            setActiveTodoId={setActiveTodoId}
+          />
+        </section>
+
+      </div>
     </div>
   );
 }
