@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/todo_app/static/css/main.2178b61c.chunk.css",
+    "main.js": "/todo_app/static/js/main.aee5204a.chunk.js",
+    "main.js.map": "/todo_app/static/js/main.aee5204a.chunk.js.map",
+    "runtime-main.js": "/todo_app/static/js/runtime-main.78791c3f.js",
+    "runtime-main.js.map": "/todo_app/static/js/runtime-main.78791c3f.js.map",
+    "static/js/2.46cc7783.chunk.js": "/todo_app/static/js/2.46cc7783.chunk.js",
+    "static/js/2.46cc7783.chunk.js.map": "/todo_app/static/js/2.46cc7783.chunk.js.map",
+    "index.html": "/todo_app/index.html",
+    "static/css/main.2178b61c.chunk.css.map": "/todo_app/static/css/main.2178b61c.chunk.css.map",
+    "static/js/2.46cc7783.chunk.js.LICENSE.txt": "/todo_app/static/js/2.46cc7783.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/todo_app/static/media/Roboto-Regular-webfont.ccc2dd0b.woff",
+    "static/media/draw.624705dd.svg": "/todo_app/static/media/draw.624705dd.svg",
+    "static/media/react_logo.f153eb9f.png": "/todo_app/static/media/react_logo.f153eb9f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.78791c3f.js",
+    "static/js/2.46cc7783.chunk.js",
+    "static/css/main.2178b61c.chunk.css",
+    "static/js/main.aee5204a.chunk.js"
+  ]
+}
