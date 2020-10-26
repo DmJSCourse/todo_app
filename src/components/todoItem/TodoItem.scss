@@ -36,13 +36,16 @@ $items-size: 22px;
 
   padding: 5px;
   margin: 0 10px 10px 0;
-
   width: 440px;
 
   display: flex;
   align-items: center;
 
   background-color: $color-items;
+
+  &:hover{
+    box-shadow: 3px 2px 3px lightblue;
+  }
   
    &__text {
       font-size: $items-size;

@@ -99,6 +99,17 @@ function App() {
           </h1>
         </header>
 
+        <section className="todos">
+          <TodoList
+            list={filterList(filter)}
+            deleteTodo={deleteTodo}
+            changeTodoCompletion={changeTodoCompletion}
+            editTodo={editTodo}
+            activeTodoId={activeTodoId}
+            setActiveTodoId={setActiveTodoId}
+          />
+        </section>
+
         <aside className="menu">
           <AddTodo 
             addTodo={addTodo}
@@ -113,16 +124,7 @@ function App() {
           />
         </aside>
 
-        <section className="todos">
-          <TodoList
-            list={filterList(filter)}
-            deleteTodo={deleteTodo}
-            changeTodoCompletion={changeTodoCompletion}
-            editTodo={editTodo}
-            activeTodoId={activeTodoId}
-            setActiveTodoId={setActiveTodoId}
-          />
-        </section>
+
 
       </div>
     </div>

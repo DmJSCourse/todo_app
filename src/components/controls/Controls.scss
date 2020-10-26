@@ -4,17 +4,18 @@ $color-items: #20639B;
   border-radius: 9px;
   font-size: 22px;
   border: 3px solid #fff;
-  background-color: #20639B;
+  background-color: $color-items;
   color: #F6D55C;
   width: 440px;
 }
 
 @mixin hover {
   &:hover {
-    background-color:#F6D55C;
+    // background-color:#F6D55C;
+    background-color: #fff;
     color: $color-items;
     transition: all 0.3s ease-in-out;
-    border: 3px solid #fff;
+    border: 3px solid $color-items;
   }
 }
 

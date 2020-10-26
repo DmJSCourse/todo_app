@@ -1,15 +1,10 @@
 Todo App using React
 
-Demo Link:
+Demo Link: https://dmjscourse.github.io/todo_app
 
 Overview:
-  App has 6 default entries, 3 of which are in completed state.
-  User is able to add new task by enterring text into field and pressing the respective button.
-  There are 3 filters available, clicking on each one will modify how list is displayed.
-  User is able to change the state by clicking checkbox to the left of task description.
-  User is able to delete taks by clicking "X" symbol.
-  User is able to edit task by clicking the edit symbol. This will provide the field to edit text. Pressing the confirmation button will edit the entry.
-  Pressing "Delete all completed tasks" will remove all tasks that are completed.
+  App starts with 6 default entries and allows user to add, edit, delete and set completion for todo items using the respective buttons.
+  App includes responsive layout, from FHD+ size to 280px(Galaxy Fold).
 
 
 Technologies used:
@@ -19,3 +14,4 @@ Technologies used:
 - CSS
 - HTML
 - BEM
+- Responsive Layout

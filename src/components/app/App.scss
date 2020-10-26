@@ -46,6 +46,7 @@ ul {
 
   display: flex;
   flex-wrap: wrap;
+  align-content: flex-start;
 
   &__header {
     background-color: $color-items;
@@ -80,7 +81,10 @@ ul {
   .wrapper {
     display: flex;
     justify-content: center;
-    background-color: $color-items;
+    // background-color: $color-items;
+    background-image: url('../../images/bg.jpg');
+    background-position: center;
+    background-size: cover;
     height: 100%;
   }
 
