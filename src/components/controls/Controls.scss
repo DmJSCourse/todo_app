@@ -11,7 +11,6 @@ $color-items: #20639B;
 
 @mixin hover {
   &:hover {
-    // background-color:#F6D55C;
     background-color: #fff;
     color: $color-items;
     transition: all 0.3s ease-in-out;

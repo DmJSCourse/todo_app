@@ -12,8 +12,9 @@ const AddTodo = ({ addTodo }) => {
       className="form__input"
       placeholder="Enter A New Task"
       onChange={({ target }) => setUserInput(target.value)}
-      onKeyDown={({ key }) => {
-        if (key === "Enter") {
+      onKeyDown={(event) => {
+        if (event.key === "Enter") {
+          event.preventDefault();
           addTodo(userInput);
           setUserInput("");
         }

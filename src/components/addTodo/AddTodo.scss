@@ -26,6 +26,10 @@ $color-items: #20639B;
     margin-right: 5px;
     color: #F6D55C;
 
+    &:hover{
+      filter: brightness(90%);
+    }
+
     &::placeholder {
       text-align: center;
       color: #fff;
